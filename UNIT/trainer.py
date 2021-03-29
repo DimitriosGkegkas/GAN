@@ -8,6 +8,7 @@ from torch.autograd import Variable
 import torch
 import torch.nn as nn
 import os
+from utils import *
 
 class MUNIT_Trainer(nn.Module):
     def __init__(self, hyperparameters):
@@ -199,6 +200,11 @@ class MUNIT_Trainer(nn.Module):
         torch.save({'gen': self.gen_opt.state_dict(), 'dis': self.dis_opt.state_dict()}, opt_name)
 
 
+from torch.autograd import Variable
+import torch
+import torch.nn as nn
+import os
+from networks import AdaINGen, MsImageDis, VAEGen
 class UNIT_Trainer(nn.Module):
     def __init__(self, hyperparameters):
         super(UNIT_Trainer, self).__init__()
