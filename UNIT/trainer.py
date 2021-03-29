@@ -204,7 +204,7 @@ from torch.autograd import Variable
 import torch
 import torch.nn as nn
 import os
-from networks import AdaINGen, MsImageDis, VAEGen
+from GAN.UNIT.networks import AdaINGen, MsImageDis, VAEGen
 class UNIT_Trainer(nn.Module):
     def __init__(self, hyperparameters):
         super(UNIT_Trainer, self).__init__()
