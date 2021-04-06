@@ -2,6 +2,7 @@ import glob
 import yaml
 from GAN.UNIT.trainer import UNIT_Trainer
 from GAN.UNIT.utils import *
+from PIL import Image
 
 def get_config(config):
     with open(config, 'r') as stream:
